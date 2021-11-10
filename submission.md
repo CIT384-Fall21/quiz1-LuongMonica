@@ -40,7 +40,7 @@
    1. Position the location of root location of the website at:  /var/www/html
      * DocumentRoot /var/www/html                                                 <!-- answer -->
    1. To disable the user "steve" from having a web presence on your server.
-     *                                                  <!-- answer -->
+     * Disabled "steve" -none                                                 <!-- answer -->
    1. To create an alias between the URI: /marketing and the file: /user/marketing/www
      * Alias /marketing /user/marketing/www                                        <!-- answer -->
    1. To define the location of the error log to be: /var/log/apps/apache/error.log
@@ -84,7 +84,7 @@
 
 1. There are a number of different types of files.  Each of these file types can be identified by a single character in the output of the command ``ls -l``.  What are these types of files:
    1. -: a regular file
-   1. p:                                                          <!-- answer -->
+   1. p: process, i know this is wrong, i can't remember what it is right now       <!-- answer -->
    1. l: symbolic link                                            <!-- answer -->
    1. d: directory                                                <!-- answer -->
    1. b: block                                                    <!-- answer -->
@@ -92,8 +92,8 @@
    1. s: socket                                                   <!-- answer -->
 
 1. Describe each of the following:
-  - process:                                                      <!-- answer -->
-  - environment:                                                  <!-- answer -->
-  - stdin: the input file, where info is coming in from, file handler is 0, usually the keyboard                                                      <!-- answer -->
+  - process: An entity that does something. All processes have the default 3 file handlers: stdin (0), stdout (1), stderr(2). They each have their own environment where env vars are stored. Processes can be linked together with pipes in order to change where the input/output of one command can come from/go to.                                                     <!-- answer -->
+  - environment: The enclosed space/area that commands are executed in. the environment has certain env vars inluding HOME or USER. You can see them by running env. a new environment is created for a command when you: create a subshell () or use a pipe (|). not all variables are passed in to the child env. to have a var be accessible globally, use 'export var' or 'declare -x var'. and put it in one of the profiles like ~/.profile.                                                 <!-- answer -->
+  - stdin: the input file, where info is coming in from, file handler is 0, and stdin is usually the keyboard                                                      <!-- answer -->
   - $?: the return value of the command that previously ran. in general: if == 0, then executed successfully, if == 1, some sort of error occurred                                                          <!-- answer -->
  
