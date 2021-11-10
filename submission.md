@@ -22,16 +22,18 @@
     1. domain: "four.five.size"                         <!-- answer -->
     1. port: "seven"                                    <!-- answer -->
     1. file-path: "/eight/nine/ten"                     <!-- answer -->
-    1. query-string: "eleven=twelve&thirteen=fourteen"  <!-- answer -->
+    1. query-string: "?eleven=twelve&thirteen=fourteen"  <!-- answer -->
     1. URI: "/eight/nine/ten?eleven=twelve&thirteen=fourteen" <!-- answer -->
-    1. fragment: "fifteen"                              <!-- answer -->
+    1. fragment: "#fifteen"                              <!-- answer -->
     <!-- Add more lines as needed -->
 
 1. In the following code block, provide the git instructions necessary to add a new file to the remote repository: git@github.com:org/project.git (You should presume that you don't have a copy of this repository on your local computer.)
    ```
       git clone git@github.com:org/project.git                  <!-- answer -->
+      cd project/                                               <!-- answer -->
+      touch file                                                <!-- answer -->
       git add file                                              <!-- answer -->
-      git commit -m "message"                                   <!-- answer -->
+      git commit -m "added new file"                            <!-- answer -->
       git push                                                  <!-- answer -->
    ```
    <!-- You many add any number of lines in the above code block that you need. -->
@@ -52,7 +54,7 @@
 
 
 1. What does the "AllowOverride" Directive do?
-    * lets users override the settings/configurations on that particular directory. For example, users can use an .htaccess file to make changes to that particular directory. AllowOverride also has different options. I think All, None and something else I can't remember.            <!-- answer -->
+    * lets users override the settings/configurations on that particular directory. For example, users can use an .htaccess file to make changes to "/marketing/promotions". AllowOverride also has different options. I think All, None and something else I can't remember.            <!-- answer -->
 
 
 1. Given the following command, provide the corresponding HTTP Request Header:
@@ -66,7 +68,7 @@
 1. The CGI standard defines a number of environment variables that are provided to a CGI program.  Identify and explain the purpose of 6 of these environment variables.
    1. QUERY_STRING:  the part of URL after ? character.             <!-- answer -->
    1. REQUEST_FILENAME: the name of the file requested by the user     <!-- answer -->
-   1. SERVER_NAME: the name of the (web) server the user is requesting something from      <!-- answer -->
+   1. SERVER_NAME: the name of the (web) server the user is requesting a file from      <!-- answer -->
    1. SERVER_PORT: the port (e.g: 80) the server is serving requests on                     <!-- answer -->
    1. REMOTE_PORT: the user's port (e.g: 2049) that they are communicating through         <!-- answer -->
    1. REMOTE_IP: the user's IP addr (e.g: 72.146.12.151) that they are coming from                 <!-- answer -->
@@ -95,5 +97,5 @@
   - process: An entity that does something. All processes have the default 3 file handlers: stdin (0), stdout (1), stderr(2). They each have their own environment where env vars are stored. Processes can be linked together with pipes in order to change where the input/output of one command can come from/go to.                                                     <!-- answer -->
   - environment: The enclosed space/area that commands are executed in. the environment has certain env vars inluding HOME or USER. You can see them by running env. a new environment is created for a command when you: create a subshell () or use a pipe (|). not all variables are passed in to the child env. to have a var be accessible globally, use 'export var' or 'declare -x var'. and put it in one of the profiles like ~/.profile.                                                 <!-- answer -->
   - stdin: the input file, where info is coming in from, file handler is 0, and stdin is usually the keyboard                                                      <!-- answer -->
-  - $?: the return value of the command that previously ran. in general: if == 0, then executed successfully, if == 1, some sort of error occurred                                                          <!-- answer -->
+  - $?: the return value of the command that previously ran. in general: if == 0, then executed successfully, if == 1, some sort of error occurred. but check the man pages of the particular command for specifics and meanings of return values                                                          <!-- answer -->
  
