@@ -8,7 +8,7 @@
 
 
 ---
-## Name:                                  <!-- answer -->
+## Name: Monica Luong                                 <!-- answer -->
 
 
 1. A URL is comprised of a number of components.  Consider the following URL:
@@ -19,20 +19,20 @@
     1. scheme: "one"                                    <!-- answer -->
     1. user: "two"                                      <!-- answer -->
     1. password: "three"                                <!-- answer -->
-    1. domain: "four.five.size"
-    1. port: "seven"
-    1. file-path: "/eight/nine/ten"
-    1. query-string: "eleven=twelve&thirteen=fourteen"
-    1. URI: "/eight/nine/ten?eleven=twelve&thirteen=fourteen"
-    1. fragment: "fifteen"
+    1. domain: "four.five.size"                         <!-- answer -->
+    1. port: "seven"                                    <!-- answer -->
+    1. file-path: "/eight/nine/ten"                     <!-- answer -->
+    1. query-string: "eleven=twelve&thirteen=fourteen"  <!-- answer -->
+    1. URI: "/eight/nine/ten?eleven=twelve&thirteen=fourteen" <!-- answer -->
+    1. fragment: "fifteen"                              <!-- answer -->
     <!-- Add more lines as needed -->
 
 1. In the following code block, provide the git instructions necessary to add a new file to the remote repository: git@github.com:org/project.git (You should presume that you don't have a copy of this repository on your local computer.)
    ```
-      git clone git@github.com:org/project.git
-      git add file
-      git commit -m "message" 
-      git push                                                   <!-- answer -->
+      git clone git@github.com:org/project.git                  <!-- answer -->
+      git add file                                              <!-- answer -->
+      git commit -m "message"                                   <!-- answer -->
+      git push                                                  <!-- answer -->
    ```
    <!-- You many add any number of lines in the above code block that you need. -->
 
@@ -58,41 +58,42 @@
 1. Given the following command, provide the corresponding HTTP Request Header:
     * curl  https://www.csun.edu/~steve/roster/input/value/input/value
     ```
-                                                      <!-- answer -->
+      GET /~steve/roster/input/value/input/value HTTP/1.1                     <!-- answer -->
+      ServerName: www.csun.edu                                                <!-- answer -->
     ```                                                      
     <!-- You many add any number of lines in the above code block that you need. -->
 
 1. The CGI standard defines a number of environment variables that are provided to a CGI program.  Identify and explain the purpose of 6 of these environment variables.
    1. QUERY_STRING:  the part of URL after ? character.             <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
-   1.                                                               <!-- answer -->
+   1. REQUEST_FILENAME: the name of the file requested by the user     <!-- answer -->
+   1. SERVER_NAME: the name of the (web) server the user is requesting something from      <!-- answer -->
+   1. SERVER_PORT: the port (e.g: 80) the server is serving requests on                     <!-- answer -->
+   1. REMOTE_PORT: the user's port (e.g: 2049) that they are communicating through         <!-- answer -->
+   1. REMOTE_IP: the user's IP addr (e.g: 72.146.12.151) that they are coming from                 <!-- answer -->
 
 
  1. Consider the following URL and regular expression used to process this string:
-    * URL:   ``http://www.fake.org/marking/john.smith/code=10325/app/input``
+    * URL:   ``http://www.fake.org/marketing/john.smith/code=10325/app/input``
     * regexp: ``"^marketing/([a-z]*.[a-z]*)/(code=[0-9]{4,6})/(.*)$"``
 
     Define the value of each of the following back references
-    1. $1:                                                           <!-- answer -->
-    1. $2:                                                           <!-- answer -->
-    1. $3:                                                           <!-- answer -->
-    1. $4:                                                           <!-- answer -->
+    1. $1: john.smith                                                <!-- answer -->
+    1. $2: code=10325                                                <!-- answer -->
+    1. $3: app/input                                                 <!-- answer -->
+    1. $4: no value, no more groups ()                               <!-- answer -->
 
 1. There are a number of different types of files.  Each of these file types can be identified by a single character in the output of the command ``ls -l``.  What are these types of files:
    1. -: a regular file
    1. p:                                                          <!-- answer -->
-   1. l:                                                          <!-- answer -->
-   1. d:                                                          <!-- answer -->
-   1. b:                                                          <!-- answer -->
-   1. c:                                                          <!-- answer -->
-   1. s:                                                          <!-- answer -->
+   1. l: symbolic link                                            <!-- answer -->
+   1. d: directory                                                <!-- answer -->
+   1. b: block                                                    <!-- answer -->
+   1. c: character                                                <!-- answer -->
+   1. s: socket                                                   <!-- answer -->
 
 1. Describe each of the following:
   - process:                                                      <!-- answer -->
   - environment:                                                  <!-- answer -->
-  - stdin:                                                        <!-- answer -->
-  - $?:                                                           <!-- answer -->
+  - stdin: the input file, where info is coming in from, file handler is 0, usually the keyboard                                                      <!-- answer -->
+  - $?: the return value of the command that previously ran. in general: if == 0, then executed successfully, if == 1, some sort of error occurred                                                          <!-- answer -->
  
